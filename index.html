@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up to Speed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Up to Speed</h1>
+            <p>Everyone has something to teach.</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="input-mode-toggle">
+                <button id="uploadModeBtn" class="mode-btn active">Upload Video</button>
+                <button id="youtubeModeBtn" class="mode-btn">YouTube URL</button>
+            </div>
+
+            <div id="uploadMode" class="input-mode">
+                <input type="file" id="videoUpload" accept="video/mp4,video/mpeg,video/mov,video/avi,video/webm" />
+            </div>
+
+            <div id="youtubeMode" class="input-mode hidden">
+                <input type="text" id="youtubeUrl" placeholder="Enter YouTube URL (e.g., https://www.youtube.com/watch?v=...)" />
+            </div>
+
+            <div id="videoPreview" class="hidden">
+                <h3>Video Preview</h3>
+                <video id="uploadedVideoPreview" controls></video>
+                <iframe id="youtubeVideoPreview" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <button id="processBtn" disabled>Process Video</button>
+            <div id="loadingIndicator" class="hidden">Processing video...</div>
+        </div>
+
+        <div id="resultsContainer" class="hidden">
+            <div class="panel">
+                <h2>Video Unpacking</h2>
+                <div id="unpackingResults"></div>
+            </div>
+
+            <div class="panel">
+                <h2>Lesson/Practice/Quiz Plan</h2>
+                <div id="lessonPlan"></div>
+                <div class="download-buttons">
+                    <button id="downloadMarkdown">Download Markdown</button>
+                    <button id="downloadPDF">Download PDF</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
