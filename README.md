@@ -2,60 +2,20 @@
 
 Everyone has something to teach.
 
-## Overview
+Up to Speed helps you put together what it is that you can teach in the following manner:
 
-**Up to Speed** analyzes educational videos and generates comprehensive learning plans with practice exercises, measurable goals, and assessment criteria. 
-
-## Features
-
-- **Video Analysis**: AI-powered extraction of skills, tasks, and workflows from videos
-- **Structured Learning Plans**: Auto-generated lesson plans with time estimates and exercises
+- **Structured Learning Plans**: Plans with time estimates and exercises
 - **Practicables**: Discrete skills that can be practiced to mastery
 - **Measurables**: Quantitative metrics to track learning progress
 - **Recordables**: Complete workflows for screen recording demonstrations
-- **Export Options**: Download lesson plans as Markdown or PDF
 
-## Quick Start
+## How to use
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-2. **Set up your API key:**
-
-   Create a `.env` file:
-   ```bash
-   GOOGLE_API_KEY=your_google_api_key_here
-   ```
-
-   Get your free API key: https://ai.google.dev/
-
-3. **Start the server:**
-   ```bash
-   npm start
-   ```
-
-4. **Open your browser:**
-
-   Navigate to `http://localhost:3000`
-
-## Usage
-
-1. Click the file upload button
-2. Select an MP4 video (educational content, tutorials, demonstrations)
+1. Run the app with `npm start`
+2. Upload a video or reference a YouTube URL
 3. Click "Process Video"
-4. View the results in two panels:
-   - **Video Unpacking**: Skills, practicables, measurables, and recordables
-   - **Lesson Plan**: Structured learning plan with exercises and assessments
-5. Download the lesson plan as Markdown or PDF
-
-## Technology
-
-- **Frontend**: Vanilla JavaScript, HTML, CSS
-- **Backend**: Node.js, Express
-- **AI**: Google Gemini 2.5 Flash for video analysis
-- **PDF Generation**: html-pdf-node
+4. Up to Speed scans the video to look for the skills, practicables, measurables, and recordables it contains
+5. Download the lesson plan containing the structured learning plan with exercises and assessments
 
 ## How It Works
 
@@ -66,23 +26,8 @@ Everyone has something to teach.
    - **Practicables**: Tasks that can be practiced
    - **Measurables**: Quantitative success metrics
    - **Recordables**: Complete workflows for demonstration
-4. Gemini generates a comprehensive lesson plan
-5. Results displayed in the UI with download options
 
-## Examples
-
-**Terminal/Command-Line Video:**
-- Skills: cd, ls, mkdir, file navigation
-- Practicables: Directory navigation, file creation
-- Measurables: Command execution speed, accuracy rate
-- Recordables: Complete project setup workflow
-
-**Music Production Video:**
-- Skills: Track recording, mixing, MIDI editing
-- Practicables: Using QWERTY keyboard as MIDI controller
-- Measurables: Track production speed, output quality
-- Recordables: Complete song production workflow
-
-## License
-
-MIT
+- **Frontend**: Vanilla JavaScript, HTML, CSS
+- **Backend**: Node.js, Express
+- **AI**: Google Gemini 2.5 Flash for video analysis
+- **PDF Generation**: html-pdf-node
