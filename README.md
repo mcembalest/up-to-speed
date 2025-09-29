@@ -2,12 +2,15 @@
 
 Everyone has something to teach.
 
-Up to Speed helps you put together what it is that you can teach in the following manner:
+## Why?
 
-- **Structured Learning Plans**: Plans with time estimates and exercises
-- **Practicables**: Discrete skills that can be practiced to mastery
-- **Measurables**: Quantitative metrics to track learning progress
-- **Recordables**: Complete workflows for screen recording demonstrations
+We are building Up to Speed to help everyone make their skills teachable and learnable for others.
+
+Teaching is really hard. Just telling people what they need to do and know is not enough. Learning only happens in the presence of some amount of motivation or fun.
+
+The most important reason people don't learn is they are uninterested, distracted, pressed for time, and not having fun.
+
+We want to make skillbuilding and demonstrating growth much more fun. That is the north star purpose of Up to Speed: a fun, decentralized platform for teaching and learning to flourish organically, since everyone has something to teach.
 
 ## How to use
 
@@ -17,7 +20,7 @@ Up to Speed helps you put together what it is that you can teach in the followin
 4. Up to Speed scans the video to look for the teachable materials it contains
 5. Once complete, you can download the learning plan with exercises and assessments
 
-## How It Works
+## How it works
 
 Gemini analyzes the video and extracts:
    - **Skills**: Individual capabilities demonstrated
@@ -25,7 +28,7 @@ Gemini analyzes the video and extracts:
    - **Measurables**: Quantitative success metrics
    - **Recordables**: Complete workflows for demonstration
 
-## How It's Made
+## How it's made
 
 - **Frontend**: Vanilla JavaScript, HTML, CSS
 - **Backend**: Node.js, Express
