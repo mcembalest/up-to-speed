@@ -1,36 +1,22 @@
-# Up to Speed
+# Up 2
 
-Everyone has something to teach.
+The north star purpose of Up 2 is to give support for teaching and learning.
 
-## Why?
+Teaching is hard. Telling people what they need to do and know is not enough. Our mission is to build things that make the process of delivering information and sharing skills more aligned with how people learn.
 
-We are building Up to Speed to help everyone make their skills teachable and learnable for others.
+People don't learn when they are uninterested, distracted, pressed for time, unsure of the value, or not having fun. Learning can only flourish in the presence of the right motivations. We want to help make teaching and learning more interesting, engaging, time-manageable, clearly valuable and *fun*.
 
-Teaching is really hard. Just telling people what they need to do and know is not enough. Learning only happens in the presence of some amount of motivation or fun.
-
-The most important reason people don't learn is they are uninterested, distracted, pressed for time, and not having fun.
-
-We want to make skillbuilding and demonstrating growth much more fun. That is the north star purpose of Up to Speed: a fun, decentralized platform for teaching and learning to flourish organically, since everyone has something to teach.
-
-## How to use
+## Setup
 
 1. Run the app with `npm start`
-2. Upload a video or reference a YouTube URL
+2. Upload a video or enter a YouTube URL
 3. Click "Process Video"
-4. Up to Speed scans the video to look for the teachable materials it contains
-5. Once complete, you can download the learning plan with exercises and assessments
+4. Download the result
 
-## How it works
+## What it does
 
-Gemini analyzes the video and extracts:
+Analyzes the video for:
    - **Skills**: Individual capabilities demonstrated
    - **Practicables**: Tasks that can be practiced
    - **Measurables**: Quantitative success metrics
    - **Recordables**: Complete workflows for demonstration
-
-## How it's made
-
-- **Frontend**: Vanilla JavaScript, HTML, CSS
-- **Backend**: Node.js, Express
-- **Video Analysis**: Google Gemini 2.5 Flash
-- **PDF Generation**: html-pdf-node
